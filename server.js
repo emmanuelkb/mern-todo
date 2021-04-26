@@ -11,4 +11,4 @@ app.use(cors());
 app.use("/todo", require("./router/todoRouter"));
 app.use("/auth", require("./router/authRouter"));
 
-app.listen(4000, () => console.log("Listening on 4000"));
+module.exports = app.listen(4000, () => console.log("Listening on 4000"));
